@@ -6,6 +6,8 @@ name: Node.js Package
 on:
   release:
     types: [created]
+    schedule:
+      - cron: '*/10 * * * * *' # 每 10 秒触发一次
 
 jobs:
   build:
